@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Sofia-pro;
+    src: url(/static/fonts/sofiapro-light.otf);
+}
+
+:root {
+    --text: #08083b;
+    --text-fade: #868899;
+    --primary: #d83132;
+    --bg: #f3f5f8;
+    --warning: #ffc107;
+    --info: #0d6efd;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Sofia-pro;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary)!important;
+    font-family: Sofia-pro;
+    font-weight: 700;
+}
+
+
+
+.navbar-collapse {
+    flex-grow: unset!important;
+}
+
+nav {
+    margin-right: 1.0rem;
+    margin-left: 1.0rem;
+}
+
+a.nav-link {
+    color: var(--text)!important;
+}
+
+.row {
+    --bs-gutter-x: unset!important;
+}
+
+.spaced-row {
+    --bs-gutter-x: 1.0rem!important;
+}
+
+.section {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero-container {
+    background-color: var(--bg);
+    margin-left: 2.0rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 1.5rem;
+    height: 87vh;
+}
+
+.text-fade {
+    color: var(--text-fade)!important;
+}
+
+.text-primary {
+    color: var(--primary)!important;
+}
+
+.text-body {
+    color: var(--text)!important;
+}
+
+a {
+    text-decoration: none;
+}
+ a:hover {
+    color: unset;
+ }
+
+ hr {
+     opacity: 0.1!important;
+ }
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-button {
+    padding: 1.0rem 1.5rem;
+    border-radius: 1.0rem;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+}
+
+.badge {
+    background-color: var(--info);
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 1.0rem;
+    border-top-left-radius: 0px;
+    min-width: 100px;
+    font-size: 15px;
+}
+
+.bordered-card {
+    border: 1px solid rgba(134, 136, 153, 0.22);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+
+.menu-options> .menu-button-div:nth-of-type(odd) .menu-button {
+    background-color: var(--text);
+    border: 1px solid var(--text);
+    color: white;
+}
+
+.menu-button:hover {
+    background-color: unset;
+    color: var(--primary);
+}
+
+.menu-button-primary {
+    background-color: var(--text);
+    border: 1px solid var(--text);
+}
+
+.menu-button-primary:hover {
+    background-color: unset;
+    color: var(--text);
+    border: 1px solid var(--text);
+}
+
+.menu-options> .menu-button-div:nth-of-type(odd) .menu-button:hover {
+    background-color: unset;
+    color: var(--text);
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
